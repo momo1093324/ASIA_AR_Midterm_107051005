@@ -16,6 +16,11 @@ public class GameManager : MonoBehaviour
 
   [Header("Girl1縮放"), Range(0f, 5f)]
     public float size = 0.3f;
+
+    [Header("女孩1動畫元件")]
+    public Animator aniGril01;
+    [Header("女孩2動畫元件")]
+    public Animator aniGril02;
     //
     private void Start()
     {
@@ -31,5 +36,15 @@ public class GameManager : MonoBehaviour
 
         girl1.localScale+= new Vector3(1, 1, 1) * joystick.Vertical*size;
         girl2.localScale += new Vector3(1, 1, 1) * joystick.Vertical * size;
+
+        girl1.localScale = new Vector3(1, 1, 1) * Mathf.Clamp(girl1.localScale.x, 0.5f, 3.5f);
+        girl2.localScale = new Vector3(1, 1, 1) * Mathf.Clamp(girl2.localScale.x, 0.5f, 3.5f);
     }
+    public void Playanimation(string aniName)
+    {
+        print(aniName);
+       aniGril01.SetTrigger(aniName);
+     aniGril02.SetTrigger(aniName);
+    }
+
 }

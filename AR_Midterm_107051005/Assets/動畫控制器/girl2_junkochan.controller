@@ -111,23 +111,23 @@ AnimatorController:
   m_Name: girl2_junkochan
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: "girl2\u8D70\u8DEF\u89F8\u767C"
+  - m_Name: "\u8D70\u8DEF\u89F8\u767C"
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: "girl2\u8DD1\u6B65\u89F8\u767C"
+  - m_Name: "\u8DD1\u6B65\u89F8\u767C"
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: "girl2\u653B\u64CA\u89F8\u767C"
+  - m_Name: "\u653B\u64CA\u89F8\u767C"
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
-    m_DefaultBool: 1
+    m_DefaultBool: 0
     m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
@@ -256,7 +256,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: "girl2\u653B\u64CA\u89F8\u767C"
+    m_ConditionEvent: "\u653B\u64CA\u89F8\u767C"
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 23204767800534156}
@@ -281,7 +281,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: "girl2\u8D70\u8DEF\u89F8\u767C"
+    m_ConditionEvent: "\u8D70\u8DEF\u89F8\u767C"
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -595183951856474075}
@@ -306,7 +306,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: "girl2\u8DD1\u6B65\u89F8\u767C"
+    m_ConditionEvent: "\u8DD1\u6B65\u89F8\u767C"
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4439189317596147323}
